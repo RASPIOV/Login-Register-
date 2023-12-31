@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="login-styles.css">
+</head>
+<body>
+    <div id="idioma-menu">
+        <img src="espana.png" alt="Español" onclick="cambiarIdioma('es')">
+        <img src="portugal.png" alt="Portugués" onclick="cambiarIdioma('pt')">
+        <img src="usa.png" alt="Inglés" onclick="cambiarIdioma('en')">
+    </div>
+
+    <div class="contenedor">
+        <div class="registro-caja">
+            <h1 id="titulo-iniciar-sesion">Iniciar Sesión</h1>
+            <form id="loginForm">
+                <label for="nombre">Nombre de Usuario:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" required>
+
+                <button type="button" id="botonIniciarSesion" onclick="iniciarSesion()">Iniciar Sesión</button>
+            </form>
+            <div id="notificacion"></div>
+        </div>
+    </div>
+
+    <script src="login-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: url('arboleda.png') center/cover fixed;
+}
+
+/* Estilos de la barra superior */
+.barra-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.seccion-barra {
+    flex: 1;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.barra-superior button {
+    padding: 10px;
+    margin-right: 10px;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.barra-superior button:hover {
+    transform: scale(1.1);
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+}
+
+.perfil img {
+    display: none;
+}
+
+.perfil span {
+    color: #fff;
+}
+
+/* Estilos del contenido del dashboard */
+.contenido-dashboard {
+    overflow: hidden;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+#desenfoque-slider {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+}
+
+/* Estilo de la barra deslizante */
+input[type="range"] {
+    width: 100%;
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="range"]:focus {
+    outline: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+    background: #fff;
+    border-radius: 25px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+    border: 1px solid #fff;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -6px;
+}
+
+/* Estilos del rectángulo sobre mí */
+.sobre-mi-rectangulo {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin: 50px auto;
+    border-radius: 10px;
+    max-width: 800px;
+}
+
+.sobre-mi-rectangulo h3 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.sobre-mi-rectangulo p {
+    font-size: 1.2em;
+    color: #333;
+}

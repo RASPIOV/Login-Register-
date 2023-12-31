@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard-styles.css">
+</head>
+<body>
+
+    <div class="barra-superior">
+        <div class="seccion-barra blog">BLOG</div>
+        <div class="seccion-barra notas">NOTAS</div>
+        <div class="seccion-barra info">INFORMACIÓN</div>
+        <div class="seccion-barra proyectos">PROYECTOS</div>
+        <div class="seccion-barra rendimiento">RENDIMIENTO</div>
+        <div class="seccion-barra perfil" onclick="cambiarImagenPerfil()">
+            <img id="imagen-perfil" src="tu-imagen-predeterminada.jpg" alt="Imagen de perfil">
+            <div id="nombre-cuenta">Nombre de Usuario</div>
+        </div>
+    </div>
+
+    <!-- Contenido del dashboard -->
+    <div class="contenido-dashboard">
+        <!-- ... tu contenido aquí ... -->
+        <div class="contenedor-desenfoque">
+            <label for="desenfoque-slider">Nivel de Desenfoque:</label>
+            <input type="range" id="desenfoque-slider" min="0" max="10" step="0.1" value="5">
+        </div>
+
+        <!-- Rectángulo sobre mí -->
+        <div class="sobre-mi-rectangulo">
+            <h3>Sobre Mí</h3>
+            <p>¡Bienvenido a mi blog! Aquí encontrarás contenido fascinante sobre diversos temas. ¡Espero que disfrutes tu visita!</p>
+        </div>
+    </div>
+
+    <script src="dashboard-script.js"></script>
+</body>
+</html>

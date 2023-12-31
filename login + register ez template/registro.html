@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="registro-styles.css">
+</head>
+<body>
+    <div class="contenedor">
+        <div class="registro-caja">
+            <h1>Registro</h1>
+            <form id="registroForm">
+                <label for="nombre" id="label-nombre">Nombre de Usuario:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="contrasena" id="label-contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" required>
+
+                <button type="button" onclick="registrarUsuario()" id="botonRegistro">Registrar</button>
+                <button type="button" onclick="irAInicioSesion()">Ir a Inicio de Sesión</button>
+            </form>
+            <div id="notificacion"></div>
+        </div>
+    </div>
+
+    <div id="idioma-menu">
+        <img src="espana.png" alt="España" onclick="cambiarIdioma('es')">
+        <img src="portugal.png" alt="Portugal" onclick="cambiarIdioma('pt')">
+        <img src="usa.png" alt="USA" onclick="cambiarIdioma('en')">
+    </div>
+
+    <script src="registro-script.js"></script>
+</body>
+</html>
